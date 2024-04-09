@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { IPosition } from '../position/position.model';
 import { EducationInfo, FreelanceInfo, ProfessionalInfo } from './resume.data';
+import { IPosition, IPositionNew } from '../position/position.model';
 
 @Component({
 	selector: 'app-resume-body',
@@ -15,7 +14,7 @@ import { EducationInfo, FreelanceInfo, ProfessionalInfo } from './resume.data';
 })
 export class ResumeBodyComponent implements OnInit {
 	public freelanceExperience: IPosition[] ;
-	public professionalExperience: IPosition[];
+	public professionalExperience: IPositionNew[];
 	public education: IPosition[];
 
 	constructor(
