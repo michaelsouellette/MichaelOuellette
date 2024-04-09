@@ -1,4 +1,5 @@
-import { IPosition } from '../position/position.model';
+import { IPosition, IPositionNew } from '../position/position.model';
+
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -78,60 +79,83 @@ export class FreelanceInfo {
 
 @Injectable()
 export class ProfessionalInfo {
-	public jobs: IPosition[] = [];
+	public jobs: IPositionNew[] = [];
 
 	constructor() {
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
 			'06/2021',
 			'Present',
-			'Managing the software engineers for the Product Discovery/Top of Funnel product team; leading development of corporate design system for both Angular and React frameworks; design high level software architecture guides for new projects; enable cross teams collaboration in the technology space.',
-			'Software Engineering Manager - Top of Funnel',
+			[
+				'Leading and mentoring software engineering teams across both Search & Discovery and Customer Engagement domains, utilizing agile methodologies..',
+				'Leveraging analytics-driven insights to inform and prioritize software development initiatives, ensuring alignment with user needs and business objectives.',
+				'Spearheading the development of grassroots corporate design system for Angular and React frameworks.',
+				'Implementing A/B testing methodologies to evaluate and optimize software features, enhancing user experience and driving measurable improvements in key performance metrics.',
+				'Designing and implementing high-level software architecture guides for new initiatives.',
+				'Managed process for the creation of an in-house marketing content management system, laying foundational work for scheduled content delivery and customization.',
+				'Fostering cross-team collaboration and technology sharing initiatives to optimize project outcomes and knowledge transfer.'
+			],
+			'Software Engineering Manager',
 			'https://www.dickssportinggoods.com/'
 		));
-		this.jobs.push(new IPosition(
-			`DICK's Sporting Goods`,
-			'10/2019',
-			'09/2021',
-			'Managing the software engineers for the Customer Engagement product team; managed the development of an in-house marketing content management system; design high level software architecture guides for new projects; enable cross teams collaboration in the technology space; leading development of corporate design system.',
-			'Software Engineering Manager - Customer Engagement',
-			'https://www.dickssportinggoods.com/'
-		));
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
 			'11/2018',
 			'10/2019',
-			'Guided an engineering team in the creation of an in-house marketing content management system (CMS); grew the use of the CMS to the most called API on the site; enabled site content and marketing teams the ability to react quickly to the market place; helped in establishing many guidelines for the growth of Angular applications within the organization; guided the largest sections of marketing content from legacy systems to newer and more scalable approaches.',
+			[
+				'Led engineering team in developing an in-house marketing CMS, making it the site\'s most frequently called API.',
+				'Through responsive web development practices and creation of CMS, empowered content and marketing teams to respond swiftly to market changes.',
+				'Established guidelines for Angular application development and migrated significant marketing content from legacy to scalable systems.'
+			],
 			'Senior Software Engineer',
 			'https://www.dickssportinggoods.com/'
 		));
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
 			'02/2018',
 			'11/2018',
-			'Lead a team of front-end developers in the creation of marketing assets for the e-commerce storefront; helped in the creation of tools to speed of business processes around site content; managed many large "instantaneous" site content shifts; worked with design teams in creating scalable and reusable content (sans CMS); managed the deprecation of legacy applications into newer processes.',
+			[
+				'Led front-end development team in creating e-commerce marketing assets and streamlining business process.',
+				'Managed rapid content updates, collaborated with design teams on scalable content creation, and transitioned legacy applications to modern processes.',
+				'Oversaw the transition and deprecation of legacy applications, implementing newer and more efficient processes.'
+			],
 			'Senior Front-End Web Developer',
 			'https://www.dickssportinggoods.com/'
 		));
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			'Industry Weapon',
 			'12/2015',
 			'02/2018',
-			`Creating interactive wireframes for web apps, using AngularJS, jQuery, HTML5, and Sass to create integrations for interactive digital signage; contributing in the development of a web app style framework for future digital signage development; developing Node.js and AngularJS based mobile applications for wayfinding in relation to digital signage; using WebSocket to create real-time queue management systems; creating interactive puzzles and games using modern web technologies for use on touchscreen displays.`,
+			[
+				'Influential to web application development team, introducing AngularJS, jQuery, HTML5, and Sass for interactive digital signage integrations.',
+				'Designed interactive wireframes and developed CMS web apps for digital signage management.',
+				'Built Node.js and AngularJS-based mobile apps for wayfinding, interactive touchscreen puzzles and games.',
+				'Implemented WebSocket for real-time queue management systems.',
+				'Led team strategy meetings, conducted interviews, hired, and trained developers.',
+				'Proactively troubleshot digital signage applications and developed preventive tools for future issues.'
+			],
 			'Front-End Web Developer'
 		));
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			'Jawbone',
 			'07/2013',
 			'11/2015',
-			'Developed growth initiatives around UP platform; responsive site development; rapid prototyping; full-stack development; lead development team in building of application; built web application using Python, AngularJS, HTML5, jQuery, and CSS3.',
+			[
+				'Developed frontend for armband data collection using AngularJS, HTML5, Sass, and Node.js; integrated REST APIs and utilized Python with jinja templating to enhance the original application.',
+				'Led development team for UP Food and Nutrition, focusing on responsive design, rapid prototyping, and full-stack development using Python, HTML5, jQuery, and Sass.'
+			],
 			'Web Developer'
 		));
-		this.jobs.push(new IPosition(
+		this.jobs.push(new IPositionNew(
 			'BodyMedia',
 			'03/2011',
 			'07/2013',
-			'Improved user site experience, improved site performance and load speed, designed and implemented website changes, e-commerce site development, JavaScript & jQuery programming, developed online pages and e-commerce through use of NetSuite software.',
+			[
+				'Enhanced user site experience and optimized site performance and load speed.',
+				'Designed and executed website updates, focusing on e-commerce development.',
+				'Utilized JavaScript and jQuery for programming enhancements.',
+				'Developed online pages and e-commerce solutions using NetSuite software.'
+			],
 			'Web Developer'
 		));
 	}
