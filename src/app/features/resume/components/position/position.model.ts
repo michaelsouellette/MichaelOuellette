@@ -22,3 +22,28 @@ export class IPosition {
 		this.companyLink = companyLink;
 	}
 }
+
+export class IPositionNew {
+	public company: string;
+	public startDate: string;
+	public endDate: string;
+	public description: object;
+	public position: string;
+	public companyLink: string;
+
+	constructor(
+		company: string,
+		startDate: string,
+		endDate: string,
+		description: object,
+		position?: string,
+		companyLink?: string
+	) {
+		this.company = company;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.description = description;
+		this.position = position;
+		this.companyLink = companyLink;
+	}
+}
