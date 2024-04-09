@@ -19,7 +19,10 @@
           "options": {
             "indexTransform": "src/index.transform.ts",
             "outputPath": "dist/app/browser",
-            "index": "src/index.html",
+			"index": {
+				"input": "src/index.html",
+				"output": "index.html"
+			},
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -49,7 +52,11 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+				"scripts": true,
+				"fonts": { "inline": true },
+				"styles": { "minify": true, "inlineCritical": false }
+			},
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
