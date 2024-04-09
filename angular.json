@@ -124,7 +124,8 @@
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "sourceMap": true,
-            "optimization": false
+            "optimization": false,
+            "buildOptimizer": false
           },
           "configurations": {
             "production": {
@@ -136,7 +137,8 @@
                 }
               ],
               "sourceMap": false,
-              "optimization": true
+              "optimization": true,
+              "buildOptimizer": true
             }
           },
           "defaultConfiguration": ""
@@ -182,7 +184,6 @@
       }
     }
   },
-  "defaultProject": "app",
   "cli": {
     "analytics": "f71cbd37-361b-47f7-9c44-d0f8be743899",
     "schematicCollections": [
