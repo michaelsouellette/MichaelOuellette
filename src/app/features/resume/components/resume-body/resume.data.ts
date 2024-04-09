@@ -34,7 +34,7 @@ export class FreelanceInfo {
 	constructor() {
 		this.jobs.push(new IPosition(
 			`Rod's Welding`,
-			'07/2001',
+			'2001',
 			'Present',
 			'Designed site layout; enhanced user experience; created graphics and content to enhance site appearance; search engine optimization; innovated back end system to manage company sales;  tracked trends and metrics in Google Analytics.',
 			this.jobTitle,
@@ -42,31 +42,31 @@ export class FreelanceInfo {
 		));
 		this.jobs.push(new IPosition(
 			`Jack Brice on Wine`,
-			'03/2014',
-			'03/2015',
+			'2014',
+			'2015',
 			'Design new site layout; creation of a custom WordPress theme; development of a responsive site; moved site from WordPress.com to a hosted version; improve user site experience; create graphics and content to enhance site aesthetic; and search engine optimization.',
 			this.jobTitle,
 			'https://www.jackbricewine.com/'
 		));
 		this.jobs.push(new IPosition(
 			`Off-the-Grid`,
-			'11/2012',
-			'03/2015',
+			'2012',
+			'2015',
 			'Design new site layout; creation of a custom WordPress theme; development of a responsive site; improve user site experience; create graphics and content to enhance site aesthetic; and search engine optimization.',
 			this.jobTitle,
 			'https://off-the-grid.ws/'
 		));
 		this.jobs.push(new IPosition(
 			`Pittsburgh Water Limo`,
-			'05/2010',
-			'11/2012',
+			'2010',
+			'2012',
 			'Designed site layout; enhanced user experience; created graphics and content to enhance site appearance; developed e-commerce solution using PayPal APIs; search engine optimization; built MySQL database for easy site maintenance; innovated back end system to manage company sales;  tracked trends and metrics in Google Analytics.',
 			this.jobTitle
 		));
 		this.jobs.push(new IPosition(
 			`WineMakingTalk.com`,
-			'04/2010',
-			'12/2012',
+			'2010',
+			'2012',
 			'Utilized Google Maps API and mySQL to develop map and database of locations for web community; used jQuery and CSS3 to build an interactive user experience.',
 			this.jobTitle
 		));
@@ -84,7 +84,7 @@ export class ProfessionalInfo {
 	constructor() {
 		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
-			'06/2021',
+			'2019',
 			'Present',
 			[
 				'Leading and mentoring software engineering teams across both Search & Discovery and Customer Engagement domains, utilizing agile methodologies..',
@@ -100,8 +100,8 @@ export class ProfessionalInfo {
 		));
 		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
-			'11/2018',
-			'10/2019',
+			'2018',
+			'2019',
 			[
 				'Led engineering team in developing an in-house marketing CMS, making it the site\'s most frequently called API.',
 				'Through responsive web development practices and creation of CMS, empowered content and marketing teams to respond swiftly to market changes.',
@@ -112,8 +112,8 @@ export class ProfessionalInfo {
 		));
 		this.jobs.push(new IPositionNew(
 			`DICK's Sporting Goods`,
-			'02/2018',
-			'11/2018',
+			'2018',
+			'2018',
 			[
 				'Led front-end development team in creating e-commerce marketing assets and streamlining business process.',
 				'Managed rapid content updates, collaborated with design teams on scalable content creation, and transitioned legacy applications to modern processes.',
@@ -124,8 +124,8 @@ export class ProfessionalInfo {
 		));
 		this.jobs.push(new IPositionNew(
 			'Industry Weapon',
-			'12/2015',
-			'02/2018',
+			'2015',
+			'2018',
 			[
 				'Influential to web application development team, introducing AngularJS, jQuery, HTML5, and Sass for interactive digital signage integrations.',
 				'Designed interactive wireframes and developed CMS web apps for digital signage management.',
@@ -138,8 +138,8 @@ export class ProfessionalInfo {
 		));
 		this.jobs.push(new IPositionNew(
 			'Jawbone',
-			'07/2013',
-			'11/2015',
+			'2013',
+			'2015',
 			[
 				'Developed frontend for armband data collection using AngularJS, HTML5, Sass, and Node.js; integrated REST APIs and utilized Python with jinja templating to enhance the original application.',
 				'Led development team for UP Food and Nutrition, focusing on responsive design, rapid prototyping, and full-stack development using Python, HTML5, jQuery, and Sass.'
@@ -148,8 +148,8 @@ export class ProfessionalInfo {
 		));
 		this.jobs.push(new IPositionNew(
 			'BodyMedia',
-			'03/2011',
-			'07/2013',
+			'2011',
+			'2013',
 			[
 				'Enhanced user site experience and optimized site performance and load speed.',
 				'Designed and executed website updates, focusing on e-commerce development.',
