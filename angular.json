@@ -19,7 +19,10 @@
           "options": {
             "indexTransform": "src/index.transform.ts",
             "outputPath": "dist/app/browser",
-            "index": "src/index.html",
+			"index": {
+				"input": "src/index.html",
+				"output": "index.html"
+			},
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -49,7 +52,11 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+				"scripts": true,
+				"fonts": { "inline": true },
+				"styles": { "minify": true, "inlineCritical": false }
+			},
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
@@ -69,7 +76,7 @@
               ]
             }
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -80,7 +87,8 @@
             "production": {
               "browserTarget": "app:build:production"
             }
-          }
+          },
+		  "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -141,7 +149,7 @@
               "buildOptimizer": true
             }
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
@@ -159,15 +167,21 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "app:build:production",
-            "serverTarget": "app:server:production",
             "routes": [
               "/"
             ]
           },
           "configurations": {
-            "production": {}
-          }
+            "production": {
+				"browserTarget": "app:build:production",
+              	"serverTarget": "app:server:production"
+			  },
+			  "development": {
+				"browserTarget": "app:build:development",
+              	"serverTarget": "app:server:development"
+			  }
+          },
+          "defaultConfiguration": "production"
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
