@@ -34,7 +34,7 @@
 							{
 								"input": "./.well-known",
 								"glob": "atproto-did",
-								"output": ".well-known/atproto-did"
+								"output": ".well-known"
 							}
 						],
 						"styles": ["src/styles.scss", "./node_modules/@mdi/font/css/materialdesignicons.css"],

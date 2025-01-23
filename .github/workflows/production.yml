@@ -49,6 +49,10 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: ${{ env.ARTIFACT_NAME }}-${{ github.sha }}
+      - name: Display structure of downloaded files
+        run: |
+            # Output artifact contents.
+            ls -R
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
