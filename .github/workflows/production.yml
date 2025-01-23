@@ -52,7 +52,7 @@ jobs:
       - name: Display structure of downloaded files
         run: |
             # Output artifact contents.
-            ls -R
+            ls -Ra
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:

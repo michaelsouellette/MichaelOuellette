@@ -54,4 +54,4 @@ jobs:
       - name: Display structure of downloaded files
         run: |
             # Output artifact contents.
-            ls -R
+            ls -Ra
