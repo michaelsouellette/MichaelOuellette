@@ -23,8 +23,8 @@ export class HomeComponent implements OnInit {
 			icon: 'instagram'
 		},
 		{
-			title: 'Threads',
-			link: 'https://www.threads.net/@michaelsouellette',
+			title: 'BlueSky',
+			link: 'https://bsky.app/profile/michael.ouellette.dev',
 			icon: 'at'
 		}
 	];
